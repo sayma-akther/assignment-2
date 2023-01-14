@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+/* header styles */
+header{
+  width: 100%;
+  background: rgba(255, 144, 14, 0.1);
+  /* position: absolute; */
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h2{
+  margin-left: 228px;
+  margin-top: 50px;
+}
+.navbar ul{
+  margin-top: 63px;
+  margin-right: 240px;
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  color: #424242;
+  gap: 50px;
+  cursor: pointer;
+}
+/* banner styles */
+.banner-title{
+  text-align: center;
+  margin: 50px 529px;
+}
+.banner-title h1{
+  font-size: 64px;
+}
+.banner-title p{
+  font-size: 16px;
+  color: #727272;
+  padding-bottom: 30px;
+}
+.ctn{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  color: whitesmoke;
+  background: #FF900E;
+  border-radius: 8px;
+}
+.banner-img{
+  position: relative;
+  margin: 50px 240px;
+}
+
+/* nex section  */
+
+.quick-list{
+  margin: 85px 300px;
+  gap: 73px;
+  display: flex;
+}
+.images{
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+.list-info{
+  margin-top: 332px;
+  margin-bottom: 332px;
+  padding-bottom: 15px;
+}
+.list-info h3{
+  color: #727272;
+  font-size: 45px;
+}
+.list-info .black{
+  color: #131313;
+}
+.list-info .yellow{
+  color: #FF900E;
+}
+.list-info p{
+  color: #727272;
+  font-size: 16px;
+  padding-bottom: 25px;
+}
+
+/* media query for mobile device */
+@media only screen and (max-width:576px){
+  header{
+    width: 100%;
+    /* position: fixed; */
+  }
+  .navbar{
+    /* margin: 20px 20px; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .navbar h2{
+    margin: 20px 0;
+  }
+  .navbar h2, ul{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar ul{
+    gap: 15px;
+    margin: 0;
+  }
+  .banner-title{
+    margin: 20px 30px;
+    text-align: center;
+  }
+  .banner-title h1{
+    font-size: 30px;
+  }
+  .banner-img{
+    position: relative;
+    margin: 20px 30px;
+
+  }
+  .banner-img img{
+    width: 450px;
+    height: 300px;
+  }
+  .quick-list{
+    margin: 20px 10px;
+    flex-direction: column;
+  }
+  .images{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .list-info{
+    margin: 10px 10px;
+    text-align: center;
+  }
+  .list-info h3{
+    font-size: 28px;
+  }
+
+}
