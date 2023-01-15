@@ -3,6 +3,7 @@
   padding: 0;
   font-family: 'Work Sans', sans-serif;
 }
+
 /* header styles */
 header{
   width: 100%;
@@ -15,6 +16,7 @@ header{
   align-items: center;
 }
 .navbar h2{
+  font-size: 5vmin;
   margin-left: 228px;
   margin-top: 50px;
 }
@@ -23,10 +25,14 @@ header{
   margin-right: 240px;
   display: flex;
   list-style: none;
-  font-size: 18px;
+  font-size: 2vmin;
   color: #424242;
   gap: 50px;
   cursor: pointer;
+}
+.navbar ul li:hover{
+  color: crimson;
+  font-weight: bold;
 }
 /* banner styles */
 .banner-title{
@@ -34,16 +40,16 @@ header{
   margin: 50px 529px;
 }
 .banner-title h1{
-  font-size: 64px;
+  font-size: 7vmin;
 }
 .banner-title p{
-  font-size: 16px;
+  font-size: 2vmin;
   color: #727272;
   padding-bottom: 30px;
 }
 .ctn{
   text-decoration: none;
-  font-size: 20px;
+  font-size: 2vmin;
   padding: 10px 15px;
   color: whitesmoke;
   background: #FF900E;
@@ -74,7 +80,7 @@ header{
 }
 .list-info h3{
   color: #727272;
-  font-size: 45px;
+  font-size: 7vmin;
 }
 .list-info .black{
   color: #131313;
@@ -84,8 +90,67 @@ header{
 }
 .list-info p{
   color: #727272;
-  font-size: 16px;
+  font-size: 2vmin;
   padding-bottom: 25px;
+}
+
+/* lady architect section style  */
+.lady-architect{
+  display: flex;
+  margin: 130px 240px;
+  gap: 54px;
+  
+}
+
+
+.border-left{
+  font-size: 6vmin;
+  padding-left: 15px;
+  border-left: 5px solid #FF900E;
+}
+.feature-title p{
+  font-size: 2vmin;
+  color: #727272;
+  padding: 24px 0;
+}
+.feature-blogs{
+  margin-bottom: 20px;
+}
+.blogs-info{
+  padding: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+.blogs-info h3{
+  font-size: 4vmin;
+  padding-bottom: 15px;
+}
+.blogs-info p{
+  font-size: 2vmin;
+  color: #727272;
+}
+
+
+.arc-image{
+  
+  margin-left: 90px;
+  /* position: relative; */
+}
+.styky-btn{
+  margin-top: -200px;
+  width: 340px;
+  height: 198px;
+  border: none;
+  background: #FF900E;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 2vmin;
+  font-weight: bold;
+  
+}
+.big{
+  font-size: 5vmin;
 }
 
 /* media query for mobile device */
@@ -101,6 +166,7 @@ header{
     flex-direction: column;
   }
   .navbar h2{
+    
     margin: 20px 0;
   }
   .navbar h2, ul{
@@ -109,6 +175,8 @@ header{
     justify-content: center;
   }
   .navbar ul{
+    flex-direction: column;
+    
     gap: 15px;
     margin: 0;
   }
@@ -116,9 +184,7 @@ header{
     margin: 20px 30px;
     text-align: center;
   }
-  .banner-title h1{
-    font-size: 30px;
-  }
+  
   .banner-img{
     position: relative;
     margin: 20px 30px;
